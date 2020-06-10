@@ -139,7 +139,12 @@ body {
     color: var(--dark-blue);
 }
 .home-intro-secondary {
-    background:var(--blue-lighter-desaturated) !important;
+    background:linear-gradient(var(--blue-lighter-desaturated), transparent) !important;
     color: #000;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
+    padding: 60px 0;
+}
+.home-intro-secondary h2 {
+    /* font-size: 30px; */
+    color: var(--dark-blue) !important;
 }
