@@ -2,6 +2,7 @@
 
 :root {
     --hero-overlay: hsl(209, 75%, 30%);
+    --primary: hsl(209, 43%, 51%);
     --accent-primary: hsl(209, 100%, 58%);
     --blue: hsl(209, 90%, 48%);
     --blue-darker: hsl(209, 90%, 35%);
@@ -147,4 +148,31 @@ body {
 .home-intro-secondary h2 {
     /* font-size: 30px; */
     color: var(--dark-blue) !important;
+}
+.counters {
+    color: var(--primary);
+    padding: 50px 0;
+}
+.counters label {
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+.counters strong {
+    display: block;
+    font-weight: 700 !important;
+    color: var(--dark-blue);
+    font-size: 30px;
+    line-height: 50px;
+}
+.counters .counter {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.counters .counter [class*=fa-]{
+    color: var(--primary);
 }
