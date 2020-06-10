@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --hero-overlay: hsl(209, 75%, 30%);
+    --accent: hsl(46, 100%, 58%);
+    --text-shadow: hsla(209, 75%, 30%, .5);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.topheader {
+    /* background:url(https://www.password-depot.de/b/slides/s1.jpg);
+    background:url(./img/michal-ico-ynkfiBzxbuY-unsplash.jpg); */
+    background:url(./img/safety.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 0;
+}
+.topheader::after {
+    content: '';
+    background: radial-gradient(var(--hero-overlay), black);
+    opacity: .5;
+    mix-blend-mode: overlay;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.topheader::before {
+    content: '';
+    background: linear-gradient(-45deg, #000, var(--hero-overlay));
+    mix-blend-mode: darken;
+    opacity: .3;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.intro {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.intro h1 {
+    font-weight: 900 !important;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.intro h1 strong {
+    font-weight: 900 !important;
+    color: var(--accent);
+    color: #fff;
+    /* text-transform: uppercase; */
+}
+.intro p {
+    all: unset;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0;
+    max-width: 600px;
+}
+.intro a {
+    font-size: 15px !important;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+}
+.intro a.btn {
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 10px;
+}
+.bg-accent {
+    background-color: var(--accent);
+    color: #ffffff !important;
+    text-shadow: 0 1px 3px var(--text-shadow);
+}
+
+.intro .link-label {
+    opacity: .7;
+}
