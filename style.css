@@ -206,7 +206,17 @@ body {
 
 .bggrau {
     padding: 30px 0;
+    background: linear-gradient(var(--primary), hsl(209, 100%, 67%)) !important;
+    color: #fff !important;
 }
+.bggrau h2,
+.bggrau h2 strong {
+    color: #fff !important;
+}
+.bggrau .lead {
+    color: #fff !important;
+}
+
 .lead {
     letter-spacing: 0;
     font-size: 18px;
