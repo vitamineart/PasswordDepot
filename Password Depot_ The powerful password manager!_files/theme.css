@@ -4870,8 +4870,7 @@ html.gap-outside .pin-wrapper .sticky-wrapper.sticky-effect-active .sticky-body 
 .btn.btn-xl {
     font-size: 16px;
     font-size: 1rem;
-    padding: 8px 16px;
-    padding: .5rem 1rem
+    padding: 1rem 2rem
 }
 
 html body .btn.active,

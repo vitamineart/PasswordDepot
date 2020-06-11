@@ -109,10 +109,15 @@ body {
 .btn {
     font-size: 16px;
 }
+.btn-primary {
+    background-color: var(--primary);
+}
 .intro a.btn {
     font-size: 16px !important;
     font-weight: 700;
     margin: 10px;
+    line-height: 1.5;
+    min-width: 220px;
 }
 .bg-accent {
     background-color: var(--accent-primary);
@@ -221,3 +226,8 @@ body {
     letter-spacing: 0;
     font-size: 18px;
 }
+.btn-lg {
+    padding: 1em 2em;
+}
+
+.btn
