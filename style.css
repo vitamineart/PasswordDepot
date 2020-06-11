@@ -9,7 +9,7 @@
     --blue-lighter: hsl(209, 90%, 65%);
     --blue-lighter-desaturated: hsl(209, 50%, 85%);
     --dark-blue: hsl(209, 90%, 20%);
-    --accent-secondary: hsl(46, 100%, 58%);
+    --accent-secondary: hsl(50, 100%, 50%);
     --text-shadow: hsla(209, 75%, 30%, .5);
 }
 ::selection {
@@ -128,10 +128,10 @@ body {
     line-height: 1.5;
     min-width: 220px;
 }
-.bg-accent {
-    background-color: var(--accent-primary);
-    color: #ffffff !important;
-    text-shadow: 0 1px 3px var(--text-shadow);
+.btn-accent-secondary {
+    background-color: var(--accent-secondary);
+    text-shadow: 0 1px 3px hsla(50, 75%, 30%, .4);
+
 }
 .call-to-action-btn .btn {
     font-weight: 600;
